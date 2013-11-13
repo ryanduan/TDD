@@ -1,5 +1,5 @@
 
-
+1.first functional test: The Django admin site
     python manage.py test fts
     
     Creating test database for alias 'default'...
@@ -17,7 +17,7 @@
     
           FAILED (failures=1)
           Destroying test database for alias 'default'...
-    
+2.login and look for Polls    
     python manage.py test fts
     
     Creating test database for alias 'default'...
@@ -35,3 +35,30 @@
     
           FAILED (failures=1)
           Destroying test database for alias 'default'...
+3.creating a test fixture
+    python manage.py test fts
+    
+    Creating test database for alias 'default'...
+    F
+    ======================================================================
+    FAIL: test_can_create_new_poll_via_admin_site (fts.tests.PollsTest)
+    ----------------------------------------------------------------------
+    Traceback (most recent call last):
+      File "/home/ryan/tdd/TDD/ryantdd/fts/tests.py", line 40, in test_can_create_new_poll_via_admin_site
+        self.fail('todo: finish tests')
+    AssertionError: todo: finish tests
+    
+    ----------------------------------------------------------------------
+    Ran 1 test in 9.329s
+    
+    FAILED (failures=1)
+    Destroying test database for alias 'default'...
+4.testing "Poll" model
+    python manage.py test polls
+    Creating test database for alias 'default'...
+    .
+    ----------------------------------------------------------------------
+    Ran 1 test in 0.001s
+    
+    OK
+    Destroying test database for alias 'default'...    
