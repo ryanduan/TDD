@@ -17,6 +17,7 @@
     
           FAILED (failures=1)
           Destroying test database for alias 'default'...
+
 2.login and look for Polls    
     python manage.py test fts
     
@@ -35,6 +36,7 @@
     
           FAILED (failures=1)
           Destroying test database for alias 'default'...
+
 3.creating a test fixture
     python manage.py test fts
     
@@ -53,6 +55,7 @@
     
     FAILED (failures=1)
     Destroying test database for alias 'default'...
+
 4.testing "Poll" model
     python manage.py test polls
     Creating test database for alias 'default'...
